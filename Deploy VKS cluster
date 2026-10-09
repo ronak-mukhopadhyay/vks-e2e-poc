@@ -1,0 +1,20 @@
+Create new namespace
+
+Burger menu (next to vSphere Client) in the top left
+Supervisor Management
+Namespaces
+New Namespace -> select supervisor -> dns compliant name -> select zones -> finish 
+
+Configure namespace
+Summary -> VM Service -> Manage VM Classes -> check all boxes on both pages -> Save
+Storage -> Add Storage -> select storage policy -> OK
+
+Create VKS cluster
+Resources -> Kubernetes -> Create Cluster 
+1. Configuration type -> Cluster API -> Custom Configuration
+2. Name cluster -> select VKr version -> select at least "best-effort-medium" size
+3. Control plane -> select # of replicas -> photon / ubuntu 
+4. Node pools -> select node pool
+5. Save / download the yaml & Finish 
+
+Cluster should take ~5 mins to come up 
